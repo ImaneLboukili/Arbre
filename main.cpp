@@ -15,7 +15,7 @@ int main(){
 	ABR arbre(&cle);
 	
 	cout << arbre.getCle() << endl;
-
+	arbre.verification();
 	
 	return EXIT_SUCCESS;
 }

@@ -17,9 +17,10 @@ class ABR{
 		ABR getFg();
 		ABR getFd();
 		int getCle();
+
 		
-		void verifictaion();
-		void recherche();
+		void verification();
+		ABR* recherche(int c);
 		void insertion();
 		int suppression(int cle);
 		int parcours();
