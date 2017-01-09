@@ -32,7 +32,7 @@ int ABR::getCle(){
 }
 
 void ABR::verification(){
-	if(fd != NULL && fg != NULL){
+	if(fd != NULL || fg != NULL){
 		cout << "Arbre non vide " << endl;
 	}
 	else{
@@ -51,4 +51,31 @@ ABR* ABR::recherche(int c ){
 	}
 }
 
+<<<<<<< HEAD
 
+=======
+void ABR::setFg(ABR* filsg){
+	fg = filsg;
+}
+
+void ABR::setFd(ABR* filsd){
+	fd = filsd;
+}
+
+void ABR::insertion(int* cFeuille, int* cInsertion){
+	
+	ABR* feuille = NULL;
+	feuille = this -> recherche(*cFeuille);
+
+	ABR inserer = ABR(cInsertion);
+	ABR* ptr = &inserer;
+
+	if(*cFeuille < *cInsertion){
+		(*feuille).setFd(ptr);
+	}else if(*cFeuille > *cInsertion){
+		(*feuille).setFg(ptr);
+	}else{
+		cout << "Error, la cle est la meme." << endl;
+	}	
+}
+>>>>>>> 04fd35b1d48706983dc6ac958c6c2dea594c0b60
