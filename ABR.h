@@ -17,11 +17,13 @@ class ABR{
 		ABR getFg();
 		ABR getFd();
 		int getCle();
+		void setFg(ABR* filsg);
+		void setFd(ABR* filsd);
 
 		
 		void verification();
 		ABR* recherche(int c);
-		void insertion();
+		void insertion(int* cFeuille, int* cInsertion);
 		int suppression(int cle);
 		int parcours();
 		int min();
