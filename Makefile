@@ -4,7 +4,7 @@ LDFLAGS=
 all: main
 
 main: main.o ABR.o
-	g++ test.o ABR.o -o main
+	g++ main.o ABR.o -o main
 
 main.o: main.cpp ABR.h
 	g++ $(CFLAGS) -c main.cpp -o main.o
